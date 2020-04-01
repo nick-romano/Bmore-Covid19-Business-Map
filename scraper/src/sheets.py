@@ -14,19 +14,16 @@ SERVICE_ACCOUNT_FILE = os.path.join(get_root_path(), 'credentials.json')
 SAMPLE_SPREADSHEET_ID = '13WirtfPlWtnLJJs_5EAa0A79UJ72iGcvhthlF6KYAus'
 SAMPLE_RANGE_NAME = 'Hampden!A1:E'
 
+columns = ["Place", "Menu", "Hours", "DirectOrder", "ThirdParty", "Details"]
 
-def create_sheets_api_service():
+
+def create_client():
     creds = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
     service = build('sheets', 'v4', credentials=creds)
     sheet_api_service = service.spreadsheets()
     return sheet_api_service
-
-    # Call the Sheets API
-    sheet = service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                                range=SAMPLE_RANGE_NAME).execute()
 
 
 def get_sheets(sheet_api_service):
@@ -43,9 +40,9 @@ def get_neighborhood_data(sheet_api_service):
         name = props['title']
         range = f"{name}!A:F"
         result = sheet_api_service.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                           range=range).execute()
+                           range=range, valueRenderOption='FORMULA').execute()
         values = result.get('values', [])
-        columns = values[0]
+        # columns = values[0]
         rows = values[2:]
         try:
             df = pd.DataFrame.from_records(rows, columns=columns)
@@ -54,34 +51,11 @@ def get_neighborhood_data(sheet_api_service):
         except Exception as e:
             e
 
-    all_data = all_data.rename(columns={"TBD": "Place"})
+    # all_data = all_data.rename(columns={"TBD": "Place"})
     all_data = all_data.loc[~pd.isna(all_data.Place)]
-    all_data
-
-def main():
-    """Shows basic usage of the Sheets API.
-    Prints values from a sample spreadsheet.
-    """
-
-    creds = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-
-    service = build('sheets', 'v4', credentials=creds)
-
-    # Call the Sheets API
-    sheet = service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                                range=SAMPLE_RANGE_NAME).execute()
-    values = result.get('values', [])
-
-    if not values:
-        print('No data found.')
-    else:
-        print('Name, Major:')
-        for row in values:
-            # Print columns A and E, which correspond to indices 0 and 4.
-            print('%s, %s' % (row[0], row[4]))
-
-
-if __name__ == '__main__':
-    main()
+    all_data.columns = all_data.columns.str.replace('%', '')
+    all_data.Menu = all_data.Menu.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
+    all_data.ThirdParty = all_data.ThirdParty.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
+    all_data.DirectOrder = all_data.DirectOrder.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
+    all_data = all_data.reset_index(drop=True)
+    return all_data
