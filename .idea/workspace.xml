@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717ad8b7-962f-4ce0-bb1f-10c5dcd24133" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/src/places.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/src/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/src/tests/test_places.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper/src/tests/test_tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Bmore-Covid19-Business-Map.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bmore-Covid19-Business-Map.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/sheets.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/sheets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/tests/test_sheets.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tests/test_sheets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/src/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/src/tests/test_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tests/test_tasks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,12 +146,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scraper/src/tasks.py</url>
-          <line>35</line>
+          <line>37</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/scraper/src/tasks.py</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>

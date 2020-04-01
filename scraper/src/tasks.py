@@ -18,16 +18,18 @@ def create_dataset():
     }
 
     for index, item in locations:
-        props = spreadsheet_data.iloc[index]
-        props["address"] = places.extract_address(item)
+        props = dict(spreadsheet_data.iloc[index])
+        props["Address"] = places.extract_address(item)
+        loc = places.extract_location(item)
+        geom = loc.as_geojson() if loc else None
         geojson['features'].append(
             places.Feature(
-                geometry=places.extract_location(item),
-                properties=props
+                geometry=geom,
+                properties=dict(props)
             ).as_geojson()
         )
 
-    with open(os.path.join(get_root_path(), 'data.json'), "r") as f:
+    with open(os.path.join(get_root_path(), 'data.json'), "w") as f:
         json.dump(geojson, f)
 
     return os.path.join(get_root_path(), 'data.json')
