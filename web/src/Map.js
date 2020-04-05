@@ -8,8 +8,8 @@ const Map = ReactMapboxGl(mapBoxCreds);
 
 const styles = {
     clusterMarker: {
-        width: 30,
-        height: 30,
+        width: 35,
+        height: 35,
         borderRadius: '50%',
         backgroundColor: '#51D5A0',
         display: 'flex',
@@ -20,14 +20,14 @@ const styles = {
         cursor: 'pointer'
     },
     marker: {
-        width: 30,
-        height: 30,
+        width: 25,
+        height: 25,
         borderRadius: '50%',
-        backgroundColor: '#E0E0E0',
+        backgroundColor: '#1890ff',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        border: '2px solid #C9C9C9'
+        border: '2px solid #096dd9'
     }
 };
 
@@ -37,8 +37,8 @@ const PlaceMap = ({ geojson, selected, selectionCallback, zoom, setZoom }) => {
 
 
     const clusterClick = (coordinates, pointCount, getLeaves) => {
-        setCenter(coordinates);
-        setZoom([17]);
+        // setCenter(coordinates);
+        // setZoom([17]);
     }
 
     const clusterMarker = (coordinates, pointCount, getLeaves) => (
@@ -65,7 +65,7 @@ const PlaceMap = ({ geojson, selected, selectionCallback, zoom, setZoom }) => {
             zoom={zoom}
         >
             <ZoomControl />
-            <Cluster ClusterMarkerFactory={clusterMarker}>
+            <Cluster ClusterMarkerFactory={clusterMarker} zoomOnClick>
                 {geojson.features.filter(r => r.geometry != null).map((feature, key) => {
                     return (
                         <Marker
@@ -78,7 +78,7 @@ const PlaceMap = ({ geojson, selected, selectionCallback, zoom, setZoom }) => {
                                 selectionCallback(feature);
                             }}
                         >
-                            <div title={feature.properties.Place} style={{cursor: "pointer"}}>
+                            <div title={feature.properties.Place} style={{cursor: "pointer", color: "#FFF"}}>
                                 {getCapitalLetters(feature.properties.Place.toString())}
                             </div>
                         </Marker>
