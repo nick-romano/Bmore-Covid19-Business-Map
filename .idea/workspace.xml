@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717ad8b7-962f-4ce0-bb1f-10c5dcd24133" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scraper/src/sheets.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/sheets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/src/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tasks.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,11 +162,6 @@
           <url>file://$PROJECT_DIR$/scraper/src/tasks.py</url>
           <line>34</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scraper/src/sheets.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

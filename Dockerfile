@@ -20,5 +20,7 @@ RUN npm run build
 FROM nginx:1.17.9-alpine as serve-stage
 # Copy the default nginx.conf
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./fullchain.pem /etc/letsencrypt/live/www.bmore-curbside-map.site/fullchain.pem
+COPY ./privkey.pem /etc/letsencrypt/live/www.bmore-curbside-map.site/privkey.pem
 # Copy prod build
 COPY --from=build-stage /app/build/ /usr/share/nginx/html

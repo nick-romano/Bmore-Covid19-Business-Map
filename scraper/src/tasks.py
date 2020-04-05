@@ -9,7 +9,7 @@ def create_dataset():
     places_client = places.create_client()
 
     spreadsheet_data = sheets.get_neighborhood_data(sheets_client)
-    locations = map(lambda x: (x[0], places.get_place(places_client, x[1].Place)), spreadsheet_data.iterrows())
+    locations = map(lambda x: (x[0], places.get_place(places_client, x[1].Place + x[1].Neighborhood)), spreadsheet_data.iterrows())
 
     geojson = {
         "type": "FeatureCollection",
