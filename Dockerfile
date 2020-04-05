@@ -22,6 +22,6 @@ FROM nginx:1.17.9-alpine as serve-stage
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./fullchain.pem /etc/letsencrypt/live/www.bmore-curbside-map.site/
 COPY ./privkey.pem /etc/letsencrypt/live/www.bmore-curbside-map.site/
-COPY ./options-ssl-nginx.conf /etc/letsencrypt/options-ssl-nginx.conf
+COPY ./options-ssl-nginx.conf /etc/letsencrypt/
 # Copy prod build
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
