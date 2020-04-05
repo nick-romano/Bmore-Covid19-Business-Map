@@ -3,6 +3,7 @@ import { getCapitalLetters } from './utils';
 import ReactMapboxGl, { Cluster, Marker, ZoomControl } from 'react-mapbox-gl';
 const mapBoxCreds = require('./credentials.json');
 
+
 const Map = ReactMapboxGl(mapBoxCreds);
 
 const styles = {
@@ -60,7 +61,7 @@ const PlaceMap = ({ geojson, selected, selectionCallback, zoom, setZoom }) => {
                 overflowX: "hidden",
                 overflowY: "hidden"
             }}
-            center={selected ? selected.geometry.coordinates : center}
+            center={selected && selected.geometry && selected.geometry.coordinates ? selected.geometry.coordinates : center}
             zoom={zoom}
         >
             <ZoomControl />

@@ -3,6 +3,7 @@ import './App.css';
 import Map from './Map'
 import Drawer from './Drawer';
 import Search from './Search';
+import About from './About';
 const geojson = require('./places.json');
 
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <main>
       <Search geojson={geojson} selectionCallback={_handleSearch} />
+      <About />
       <Map
         geojson={geojson}
         selected={selected}
