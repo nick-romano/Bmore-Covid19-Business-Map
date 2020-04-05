@@ -54,6 +54,8 @@ def get_neighborhood_data(sheet_api_service):
     # all_data = all_data.rename(columns={"TBD": "Place"})
     all_data = all_data.loc[~pd.isna(all_data.Place)]
     all_data.columns = all_data.columns.str.replace('%', '')
+    all_data.Place = all_data.Place.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
+    all_data = all_data.loc[~pd.isna(all_data.Place)]
     all_data.Menu = all_data.Menu.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
     all_data.ThirdParty = all_data.ThirdParty.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)
     all_data.DirectOrder = all_data.DirectOrder.str.replace(r'(?s)=HYPERLINK\("(.*?)","(.*?)"\)', r"\1", regex=True)

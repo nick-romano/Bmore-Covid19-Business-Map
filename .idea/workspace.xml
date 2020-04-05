@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717ad8b7-962f-4ce0-bb1f-10c5dcd24133" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper/src/tests/test_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/tests/test_tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/src/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/src/sheets.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/src/sheets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +17,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZozppRnV3DOq1EwW9MQOPeMkKt" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -28,7 +32,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_tasks.TestTasks.test_create_dataset">
+  <component name="RunManager" selected="Python.index">
+    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Bmore-Covid19-Business-Map" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scraper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper/index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for test_places.TestPlaces" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Bmore-Covid19-Business-Map" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,20 +93,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_places.TestPlaces.test_get_place" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Bmore-Covid19-Business-Map" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scraper/src/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_places.TestPlaces.test_get_place&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for test_tasks.TestTasks.test_create_dataset" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Bmore-Covid19-Business-Map" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.index" />
         <item itemvalue="Python tests.Unittests for test_tasks.TestTasks.test_create_dataset" />
         <item itemvalue="Python tests.Unittests for test_places.TestPlaces.test_extract_address" />
         <item itemvalue="Python tests.Unittests for test_places.TestPlaces" />
         <item itemvalue="Python tests.Unittests for test_places.TestPlaces.test_get_location" />
-        <item itemvalue="Python tests.Unittests for test_places.TestPlaces.test_get_place" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +138,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -153,6 +163,11 @@
           <url>file://$PROJECT_DIR$/scraper/src/tasks.py</url>
           <line>34</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scraper/src/sheets.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
