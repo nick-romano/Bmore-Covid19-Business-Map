@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11cf621423790702f7642591a1953d0e",
+    "revision": "19905eeda66b3189b2dfb828cee73841",
     "url": "/Bmore-Covid19-Business-Map/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bmore-Covid19-Business-Map/static/css/2.2adbbf95.chunk.css"
   },
   {
-    "revision": "dc43e39e5915f593d80e",
+    "revision": "8aa52494a9bccee82009",
     "url": "/Bmore-Covid19-Business-Map/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bmore-Covid19-Business-Map/static/js/2.85394f67.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc43e39e5915f593d80e",
-    "url": "/Bmore-Covid19-Business-Map/static/js/main.5e19e05f.chunk.js"
+    "revision": "8aa52494a9bccee82009",
+    "url": "/Bmore-Covid19-Business-Map/static/js/main.bd9a0dad.chunk.js"
   },
   {
     "revision": "834aa095a40bd20d5e03",
