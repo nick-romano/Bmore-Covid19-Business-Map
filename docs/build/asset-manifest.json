@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Bmore-Covid19-Business-Map/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Bmore-Covid19-Business-Map/static/js/main.54a5bd94.chunk.js",
+    "main.js.map": "/Bmore-Covid19-Business-Map/static/js/main.54a5bd94.chunk.js.map",
+    "runtime-main.js": "/Bmore-Covid19-Business-Map/static/js/runtime-main.fc4193ce.js",
+    "runtime-main.js.map": "/Bmore-Covid19-Business-Map/static/js/runtime-main.fc4193ce.js.map",
+    "static/css/2.2adbbf95.chunk.css": "/Bmore-Covid19-Business-Map/static/css/2.2adbbf95.chunk.css",
+    "static/js/2.85394f67.chunk.js": "/Bmore-Covid19-Business-Map/static/js/2.85394f67.chunk.js",
+    "static/js/2.85394f67.chunk.js.map": "/Bmore-Covid19-Business-Map/static/js/2.85394f67.chunk.js.map",
+    "index.html": "/Bmore-Covid19-Business-Map/index.html",
+    "precache-manifest.082ca069830af12d47ac275c0b9589d6.js": "/Bmore-Covid19-Business-Map/precache-manifest.082ca069830af12d47ac275c0b9589d6.js",
+    "service-worker.js": "/Bmore-Covid19-Business-Map/service-worker.js",
+    "static/css/2.2adbbf95.chunk.css.map": "/Bmore-Covid19-Business-Map/static/css/2.2adbbf95.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/Bmore-Covid19-Business-Map/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.85394f67.chunk.js.LICENSE.txt": "/Bmore-Covid19-Business-Map/static/js/2.85394f67.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc4193ce.js",
+    "static/css/2.2adbbf95.chunk.css",
+    "static/js/2.85394f67.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.54a5bd94.chunk.js"
+  ]
+}
