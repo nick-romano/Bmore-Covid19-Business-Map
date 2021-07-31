@@ -1,9 +1,9 @@
 
-# Bmore-Covid19-Business-Map
-https://bmore-curbside-map.site/
+# Bmore-Covid19-Business-Map (Archived)
+https://nick-romano.github.io/Bmore-Covid19-Business-Map/
 
 # Details
-A python data build that spits into a react front end and runs through docker.
+This was an application that ran on Docker. It would parse a live Google Spreadsheet that contained updated details for restaurants in Baltimore at the start of the Covid-19 pandemic. The script would take each location and use the Google Places API to plot the location on a map. The final locations and details were visualized using a custom web map application. The docker container managed the running of the script followed by the hosting of the website / webmap. The current github pages URL is just an archive from one of those runs.
 
 
 ## Workflow
