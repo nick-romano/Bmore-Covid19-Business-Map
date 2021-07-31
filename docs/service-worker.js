@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Bmore-Covid19-Business-Map/precache-manifest.bf130518b788846374dfb70778feed42.js"
+  "/Bmore-Covid19-Business-Map/precache-manifest.cd7539031d0282aeeee45b472bda4fe6.js"
 );
 
 self.addEventListener('message', (event) => {
