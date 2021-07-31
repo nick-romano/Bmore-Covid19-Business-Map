@@ -12,7 +12,7 @@ function App() {
   const [zoom, setZoom] = useState([11]);
 
   const _setSelected = (feature) => {
-    window.location.href = `${window.location.href}`
+    // window.location.href = `${window.location.href}`
     setSelected(feature);
   }
 
